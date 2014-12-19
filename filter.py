@@ -20,11 +20,8 @@ class Sloution(object):
         for x in xrange(2,self.length):
             if self.data[x] == 0:
                 mutil = 2
-                while True:
-                    if x*mutil<self.length:
-                        self.data[x*mutil] += 1
-                    else:
-                        break
+                while x*mutil<self.length:
+                    self.data[x*mutil] += 1
                     mutil += 1
     def getStartNum(self):
         x = 2
